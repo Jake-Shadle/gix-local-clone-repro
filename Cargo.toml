@@ -1,0 +1,15 @@
+[package]
+name = "gix-local-clone-repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tempfile = "3.7"
+
+[dependencies.gix]
+version = "0.51"
+features = [
+    "max-performance-safe",
+    "blocking-network-client",
+    "blocking-http-transport-reqwest-rust-tls",
+]
